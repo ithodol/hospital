@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>환자 상세조회</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>환자 수정</h1>
+        <div class="pContent">
+            <div>ID</div>
+            <input disabled type="text" class="patientid"/><br/><br/>
+
+            <div>이름</div>
+            <input disabled type="text" class="name"/><br/><br/>
+
+            <div>생년월일</div>
+            <input disabled type="text" class="birthdate"/><br/><br/>
+
+            <div>연락처</div>
+            <input  type="text" class="phone"/><br/><br/>
+
+            <div>주소</div>
+            <input  type="text" class="address"/><br/><br/>
+
+            <div>작성일</div>
+            <input disabled type="text" class="createdat"/><br/><br/><br/>
+
+        <button type="button" class="updateBtn" onclick="onUpdate()">수정하기</button>
+
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="patientupdate.js"></script>
+</body>
+</html>
