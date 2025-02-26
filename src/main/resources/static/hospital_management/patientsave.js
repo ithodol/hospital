@@ -7,9 +7,8 @@ const onSave = () => {
     const obj = {name, birthdate, phone, address};
     axios.post('/patient', obj)
         .then(r => {
-
+            alert('환자 등록 성공');
             location.href = '/hospital_management/patient.html';
         })
-
-
+        .catch(e => {console.error(e);})
 }
