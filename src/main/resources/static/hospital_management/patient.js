@@ -1,7 +1,3 @@
-const pUpdatePage = () => {
-    location.href='/hospital_management/patientupdate.html';
-}
-
 const onFindAll = async () => {
     try{
         const r = await axios.get('/patient')
