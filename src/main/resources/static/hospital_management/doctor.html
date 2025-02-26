@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>의사 관리</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="patient.css">
 </head>
 <body>
     <button type="button" class="homeBtn" onclick="location.href='/hospital_management/index.html'">&#x1F4A3</button>
+    <div id="container">
+        <h1>의사 목록</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th> <th>이름</th> <th>전공</th> <th>기타</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+            </tr>
+            </tbody>
+        </table>
+        <button type="button" class="save" onclick="location.href='/hospital_management/doctorsave.html'">의사 등록</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="doctor.js"></script>
+
 </body>
 </html>

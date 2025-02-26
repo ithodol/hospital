@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>의사 등록</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <button type="button" class="homeBtn" onclick="location.href='/hospital_management/index.html'">&#x1F4A3</button>
+
+    <div id="container">
+        <h1>의사 등록</h1>
+        <div class="pContent">
+            <div>이름</div>
+            <input type="text" class="name"/><br/><br/>
+
+            <div>전공</div>
+            <input type="text" class="specialty"/><br/><br/>
+
+            <div>연락처</div>
+            <input  type="text" class="phone"/><br/><br/><br/>
+
+            <button type="button" class="saveBtn" onclick="onSave()">등록하기</button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="doctorsave.js"></script>
+</body>
+</html>
