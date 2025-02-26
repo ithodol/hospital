@@ -24,7 +24,7 @@ const onUpdate = async() => {
     const r = await axios.put('/patient', obj);
     if(r.data == 1){
         alert('환자 정보 수정 완료');
-        onView();
+        location.href="/hospital_management/patient.html";
     }
 }
 

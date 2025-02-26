@@ -14,8 +14,7 @@ const onFindAll = async () => {
                             <td>${patient.name}</td>
                             <td>${patient.birthdate}</td>
                             <td>
-                                <button onclick="location.href='/hospital_management/patientupdate.html?patientid=${patient.patientid}'">수정</button>
-                                <button onclick="location.href='/hospital_management/patientdelete.html?patientid=${patient.patientid}')">삭제</button>
+                                <button onclick="location.href='/hospital_management/patientupdate.html?patientid=${patient.patientid}'">상세조회</button>
                             </td>
                         </tr>`
             })

@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="patient.css">
 </head>
 <body>
+    <button type="button" class="homeBtn" onclick="location.href='/hospital_management/index.html'">&#x1F4A3</button>
 
     <div id="container">
-        <h1>환자 수정</h1>
+        <h1>환자 상세 정보</h1>
         <div class="pContent">
             <div>ID</div>
             <input disabled type="text" class="patientid"/><br/><br/>
@@ -30,6 +31,7 @@
             <input disabled type="text" class="createdat"/><br/><br/><br/>
 
         <button type="button" class="updateBtn" onclick="onUpdate()">수정하기</button>
+        <button type="button" class="updateBtn" onclick="onDelete()">삭제하기</button>
 
         </div>
 
