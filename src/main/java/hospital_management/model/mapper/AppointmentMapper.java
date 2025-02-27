@@ -20,7 +20,7 @@ public interface AppointmentMapper {
     @Select("select * from appointment where doctorid = #{doctorid}")
     public List<AppointmentDto> findD(int doctorid);
 
-    @Update("update appointment set appointmentdate = #{appointmentdate}, appointmenttime = #{appointmenttime} where appointmentid = #{appointmentid}")
+    @Update("update appointment set appointmentdate = #{appointmentdate}, appointmenttime = #{appointmenttime}, status = #{status} where appointmentid = #{appointmentid}")
     public boolean update(AppointmentDto appointmentDto);
 
     @Delete("delete from appointment where appointmentid = #{appointmentid}")

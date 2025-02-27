@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>진료 예약 관리</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="patient.css">
 </head>
 <body>
     <button type="button" class="homeBtn" onclick="location.href='/hospital_management/index.html'">&#x1F4A3</button>
+    <div id="container">
+        <button type="button" class="save" onclick="location.href='/hospital_management/appointmentsave.html'">진료 예약 등록</button>
+        <br/>  <br/>
+        날짜 : <input type="date"/>
+        <button type="button" onclick="findDate()" class="dateBtn">조회</button> <br/> <br/>
 
+        환자 ID : <input type="text"/>
+        <button type="button" onclick="findP()" class="patientBtn">조회</button> <br/> <br/>
+
+        의사 ID : <input type="text"/>
+        <button type="button" onclick="findD()" class="doctorBtn">조회</button> <br/> <br/> <br/>
+
+        <h2>예약 목록</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>환자이름</th> <th>의사이름</th> <th>예약날짜</th> <th>예약시간</th> <th>상태</th> <th>기타</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+            </tr>
+            </tbody>
+        </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="appointment.js"></script>
 </body>
 </html>

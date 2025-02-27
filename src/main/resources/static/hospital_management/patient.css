@@ -50,3 +50,9 @@ table > tbody > tr > td{
 .save{
     width:40%;
 }
+
+.dateBtn, .patientBtn, .doctorBtn{
+    background-color:black;
+    color:white;
+    border:none;
+}
