@@ -1,4 +1,9 @@
-const findDate = () => {
+const findDate = async () => {
+    const appointmentdate = document.querySelector('.appointmentdate').value;
+
+
+
+
 
 }
 
