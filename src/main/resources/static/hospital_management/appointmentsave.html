@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>진료 예약 등록</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="patient.css">
 </head>
 <body>
 <button type="button" class="homeBtn" onclick="location.href='/hospital_management/index.html'">&#x1F4A3</button>
@@ -16,19 +18,15 @@
             <input type="text" class="dID"/><br/><br/>
 
             <div>날짜</div>
-            <input type="text" class="date"/><br/><br/>
+            <input type="date" class="date"/><br/><br/>
 
             <div>시간</div>
             <input type="text" class="time"/><br/><br/>
 
-            <button type="button" class="updateBtn" onclick="onUpdate()">수정하기</button>
-            <button type="button" class="updateBtn" onclick="onDelete()">삭제하기</button>
-
+            <button type="button" class="updateBtn" onclick="onSave()">등록하기</button>
         </div>
-
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="appointment.js"></script>
+    <script src="appointmentsave.js"></script>
 </body>
 </html>
